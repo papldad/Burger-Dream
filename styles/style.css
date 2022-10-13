@@ -33,8 +33,24 @@
     position: relative;
 }
 
-.h1 {
+.title-icon img {
+    width: 50px;
+    height: 75px;
+
+}
+
+.title {
     padding: 0 1vw;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    gap: 1vw;
+}
+
+.h1 {
 
     color: var(--color-text);
 }
@@ -49,19 +65,6 @@
 
 #menu {
     padding: 0 1vw;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-
-    gap: 1vw;
-
-}
-
-.menu-lines-icon img {
-    width: 50px;
-    height: 75px;
-
 }
 
 #menu-lines {
