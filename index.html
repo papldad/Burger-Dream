@@ -5,21 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Burger</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Burger Dream</title>
 </head>
 
 <body>
 
     <div class="container">
-        <header class="header">
-
-            <div class="title">
-                <div class="title-icon">
-                    <img src="./assets/img/0-burger-icon.png" alt="icon">
-                </div>
-                <h1 class="h1 text-hover">Dream Burger</h1>
-            </div>
+        <header id="header" class="header">
 
             <div id="menu">
                 <div id="menu-lines" onclick="onClickMenu()">
@@ -27,19 +20,15 @@
                     <div id="line2" class="line"></div>
                     <div id="line3" class="line"></div>
                 </div>
-
-                <div id="nav-bg"></div>
-
-                <nav id="nav">
-                    <div id="menu-list">
-                        <h2><a href="#">Home</a></h2>
-                        <h2><a href="#">Menu</a></h2>
-                        <h2><a href="#">About</a></h2>
-                        <h2><a href="#">Blog</a></h2>
-                        <h2><a href="#">Contact</a></h2>
-                    </div>
-                </nav>
             </div>
+
+            <nav id="nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Menu</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </nav>
 
         </header>
     </div>
@@ -47,15 +36,23 @@
     <div class="container">
         <main class="main">
 
+            <div class="plate-burger-top">
+                <div class="burger-top"></div>
+            </div>
+
         </main>
     </div>
 
-
     <div class="container">
-        <footer class="footer"></footer>
+        <footer class="footer">
+
+
+
+        </footer>
     </div>
 
-    <script src="scripts/script.js"></script>
+    <script src="./scripts/script.js"></script>
+
 </body>
 
 </html>

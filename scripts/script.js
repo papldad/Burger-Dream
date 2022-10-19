@@ -1,9 +1,5 @@
 function onClickMenu() {
-    console.log("click");
-
+    document.getElementById("header").classList.toggle("open-header");
     document.getElementById("menu-lines").classList.toggle("open-menu");
-    document.getElementById("nav").classList.toggle("show-block");
-    document.getElementById("nav-bg").classList.toggle("show-block-bg");
-    document.getElementById("menu-list").classList.toggle("show-block-bg");
-
+    document.getElementById("nav").classList.toggle("open-nav");
 }
