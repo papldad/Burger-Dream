@@ -41,7 +41,6 @@
     top: calc(var(--value-button-menu) / 2);
     width: calc(2 * var(--value-button-menu));
     height: calc(2 * var(--value-button-menu));
-    /* margin: 0 calc(var(--value-button-menu) / 2); */
 
     justify-content: center;
     align-items: center;
@@ -54,8 +53,6 @@
 }
 
 #menu-lines {
-    /* position: relative;
-    z-index: 10; */
     width: calc(var(--value-button-menu)*1.5);
     height: var(--value-button-menu);
 
@@ -75,28 +72,6 @@
 
     border-radius: 5px;
     background-color: var(--color-bg);
-}
-
-.open-menu {}
-
-.open-menu .line {
-    background-color: var(--color-text-active);
-}
-
-.open-menu #line1 {
-    width: 112.5%;
-    transform:
-        translateX(calc(var(--valueM-button-menu) / 5)) translateY(calc(var(--valueM-button-menu) / 50)) rotate(-29.5deg);
-}
-
-.open-menu #line2 {
-    opacity: 0;
-}
-
-.open-menu #line3 {
-    width: 112.5%;
-    transform:
-        translateX(calc(var(--valueM-button-menu) / 5)) translateY(calc(var(--value-button-menu) / 50)) rotate(29.5deg);
 }
 
 #nav {
@@ -186,6 +161,30 @@
         display: flex;
     }
 
+    .open-menu {
+        right: calc(var(--value-button-menu) / 2);
+    }
+
+    .open-menu .line {
+        background-color: var(--color-text-active);
+    }
+
+    .open-menu #line1 {
+        width: 112.5%;
+        transform:
+            translateX(calc(var(--valueM-button-menu) / 5)) translateY(calc(var(--valueM-button-menu) / 50)) rotate(-29.5deg);
+    }
+
+    .open-menu #line2 {
+        opacity: 0;
+    }
+
+    .open-menu #line3 {
+        width: 112.5%;
+        transform:
+            translateX(calc(var(--valueM-button-menu) / 5)) translateY(calc(var(--value-button-menu) / 50)) rotate(29.5deg);
+    }
+
     #nav {
         display: none;
         background-color: #FFF;
@@ -196,7 +195,7 @@
         top: 0 !important;
         flex-direction: column !important;
         align-items: stretch !important;
-        
+
         gap: 0 !important;
 
         width: 100%;
@@ -206,6 +205,6 @@
     .open-nav a {
         text-align: center;
         font-size: 3em;
-        color:  var(--color-bg) !important;
+        color: var(--color-bg) !important;
     }
 }
