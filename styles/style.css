@@ -41,7 +41,7 @@
     top: calc(var(--value-button-menu) / 2);
     width: calc(2 * var(--value-button-menu));
     height: calc(2 * var(--value-button-menu));
-    margin: 0 calc(var(--value-button-menu) / 2);
+    /* margin: 0 calc(var(--value-button-menu) / 2); */
 
     justify-content: center;
     align-items: center;
