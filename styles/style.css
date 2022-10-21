@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     overflow-x: hidden;
     width: 100%;
@@ -38,7 +42,7 @@
 }
 
 .bg-about {
-    text-shadow: 2px 4px black;
+    text-shadow: 1px 1px 5px black;
     background: linear-gradient(-10deg, var(--color-text)40%, var(--color-bg)50%);
 }
 
@@ -205,6 +209,8 @@
     display: flex;
     flex-direction: column;
     gap: 2em;
+
+    font-size: 1.2em;
 }
 
 .about-par>p:nth-child(1) {
@@ -230,8 +236,46 @@
     height: 60vh;
 }
 
-#menu-burger {
-    
+#menu-burger {}
+
+#cards {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.card {
+    flex: 1 0;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    max-width: 100%;
+    border-radius: 1em;
+}
+
+.card img {
+    padding: 0 !important;
+    min-width: 300px;
+    max-width: 100%;
+
+    border-radius: 1em;
+}
+
+.card-text {
+    width: 100%;
+    flex-grow: 1;
+    padding: 0.25em;
+
+    text-align: center;
+    font-size: 1.5em;
+
+    border-bottom: 3px var(--color-bg) solid;
+    border-radius: 1em;
 }
 
 @keyframes rotate {
